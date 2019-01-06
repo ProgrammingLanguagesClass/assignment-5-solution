@@ -29,7 +29,6 @@ For:
 ```
 matrix<int> a(n1,m1);
 matrix<int> b(n2,m2);
-array<int> c(n3);
 int x[n4][m4];
 ```
 The user should be able to do the following operations:
@@ -48,13 +47,11 @@ a - x;
 x - a;
 
 a * b; // inner dimensions must agree, i.e. m1 == n2
-a * c;
 a * x;
 x * a;
 
 a / b; // a * b.inverse()
 a / x;
-x / a;
 
 a += b;
 a += x;
@@ -63,7 +60,6 @@ a -= b;
 a -= x;
 
 a *= b;
-a *= c;
 a *= x;
 
 a /= b;
